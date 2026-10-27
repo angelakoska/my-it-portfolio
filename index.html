@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | My IT Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
+    <header id="site-header">
         <h1>My IT Portfolio</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About</a>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content" class="page-grid page-grid--two">
+        <section class="panel">
             <h2>Welcome to My Portfolio!</h2>
             <p>
                 Welcome to my personal portfolio!
@@ -30,7 +35,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="panel">
             <h2>My Journey into IT</h2>
             <p>
                 I am pursuing an Associate of Science
@@ -48,7 +53,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>My IT Portfolio | 2026</p>
     </footer>  
 
