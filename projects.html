@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | My IT Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header">
         <h1>My IT Portfolio</h1>
 
-        <nav>
+        <nav class="site-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html" aria-current="page">Projects</a>
             <a href="about.html">About</a>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content" class="page-grid page-grid--three">
+        <section class="panel">
             <h2>My First HTML Website</h2>
             <p>
                 One of my first web development projects
@@ -37,7 +41,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="panel">
             <h2>Skills I'm Learning</h2>
             <p>
                 As I continue studying Information
@@ -53,7 +57,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="panel">
             <h2>Future Projects</h2>
             <p>
                 I plan to add more projects to my
@@ -64,7 +68,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>My IT Portfolio | 2026</p>
     </footer>
 </body>
