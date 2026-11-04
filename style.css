@@ -279,7 +279,9 @@ a:focus-visible {
 .certification__image {
     display: block;
     width: 100%;
+    max-width: 300px;
     height: auto;
+    margin-inline: auto;
     border-radius: 8px;
     border: 1px solid var(--lavender);
     background: var(--lilac);
@@ -297,4 +299,15 @@ a:focus-visible {
 
 .certification figcaption strong {
     color: var(--heading);
+}
+
+.certification figcaption {
+    align-items: center;
+    text-align: center;
+}
+
+.certification__full {
+    display: inline-block;
+    padding: 4px 8px;
+    font-weight: 700;
 }
