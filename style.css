@@ -140,6 +140,11 @@ a:focus-visible {
     color: var(--charcoal);
 }
 
+.page-grid:focus-visible {
+    outline: 2px solid var(--rose);
+    outline-offset: 4px;
+}
+
 .page-grid {
     width: calc(100% - 32px);
     max-width: 1100px;
@@ -235,6 +240,21 @@ a:focus-visible {
 
     .panel {
         padding: var(--space-4);
+    }
+}
+
+/* NARROW OR ZOOMED VIEWS: Stack navigation so text doesn't overlap.
+   At 200% zoom, a 320px screen can have roughly 160 CSS pixels. */
+@media (max-width: 359px) {
+    .site-nav {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .site-nav a {
+        display: grid;
+        place-items: center;
+        min-height: 44px;
+        overflow-wrap: anywhere;
     }
 }
 
