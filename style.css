@@ -268,3 +268,33 @@ a:focus-visible {
         transition: none;
     }
 }
+
+/* Certification showcase inside the Welcome panel */
+.certification {
+    margin: var(--space-3) 0 0;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--border);
+}
+
+.certification__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--lavender);
+    background: var(--lilac);
+}
+
+.certification figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+    color: var(--lilac);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.certification figcaption strong {
+    color: var(--heading);
+}
